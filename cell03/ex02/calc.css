@@ -1,0 +1,11 @@
+/* middle  */
+body {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* CHARACTER size */
+input, select {
+  font-size: 16px;
+  padding: 5px;
+}
