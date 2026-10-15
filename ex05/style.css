@@ -1,36 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
 
-/* Tailwind Color Extension Config */
-@layer base {
-  :root {
-    --color-day-bg: #f6eee3;
-    --color-day-card: #eae0d0;
-    --color-day-text: #5c4a3e;
-    --color-day-accent: #c8a882;
-    --color-night-bg: #1e1c24;
-    --color-night-card: #2a2734;
-    --color-night-text: #e2ddf0;
-    --color-night-accent: #8a7fb9;
-  }
+/* Configure Tailwind Custom Colors */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts & Smooth Styling */
+body { 
+  font-family: 'Mitr', sans-serif; 
+  transition: background-color 0.4s, color 0.4s; 
 }
 
-body {
-  font-family: 'Mitr', sans-serif;
-  transition: background-color 0.4s, color 0.4s;
+.serif-title { 
+  font-family: 'Playfair Display', serif; 
 }
 
-.serif-title {
-  font-family: 'Playfair Display', serif;
-}
-
-.glass-card {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+/* Glassmorphism Effect */
+.glass-card { 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
 }
 
 /* Candle Flame Animation */
 .flame {
-  width: 18px;
+  width: 18px; 
   height: 28px;
   background: linear-gradient(to bottom, #fff, #ffcd38, #ff6b00);
   border-radius: 50% 50% 20% 20%;
@@ -39,16 +32,7 @@ body {
 }
 
 @keyframes flicker {
-  0% {
-    transform: scale(1) rotate(-2deg);
-    opacity: 0.9;
-  }
-  50% {
-    transform: scale(1.08) rotate(2deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.95) rotate(-1deg);
-    opacity: 0.85;
-  }
+  0% { transform: scale(1) rotate(-2deg); opacity: 0.9; }
+  50% { transform: scale(1.08) rotate(2deg); opacity: 1; }
+  100% { transform: scale(0.95) rotate(-1deg); opacity: 0.85; }
 }
