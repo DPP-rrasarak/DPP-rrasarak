@@ -1,0 +1,7 @@
+$(document).ready(function() {
+  $('#btn').click(function() {
+    // สุ่มสี Hex เช่น #a3f1c2
+    var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    $('body').css('background-color', randomColor);
+  });
+});
