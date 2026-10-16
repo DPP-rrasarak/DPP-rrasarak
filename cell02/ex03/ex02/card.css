@@ -1,0 +1,8 @@
+body { display: flex; justify-content: center; font-family: sans-serif; }
+.card { border: 1px solid #ccc; text-align: center; border-radius: 8px; overflow: hidden; width: 250px; }
+.card h2 { background: #333; color: #fff; margin: 0; padding: 10px; font-size: 1.1rem; }
+table { border-collapse: collapse; margin: auto; width: 100%; }
+td { border: none; padding: 8px; }
+.pic { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; }
+.icon { width: 24px; height: 24px; margin: 0 4px; }
+button { width: 80%; padding: 6px; cursor: pointer; }
